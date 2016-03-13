@@ -6,14 +6,36 @@ TiteeniClicker.Components.AdminView = React.createClass({
     }
   },
   renderGuildsList(){
-    return this.data.guilds.map((guild, i) => {
-      return <TiteeniClicker.Components.GuildListView key={guild._id} guild={guild} link={true} />
+    return this.data.guilds.map((guild) => {
+      return(
+        <tr key={guild._id}>
+          <td className="guildList_names"><a href={"/guilds/"+guild._id}>{guild.guild}</a>:</td>
+          <td>{guild.points}</td>
+          <td>{guild.positives}</td>
+          <td>{guild.negatives}</td>
+
+        </tr>
+      );
     });
   },
   render(){
     return(
       <div className="overView">
-        {this.renderGuildsList()}
+        <h2 className="pointsTitle">Pistetilanne - Tuomaristonäkymä</h2>
+        <table className="currentScore">
+          <thead>
+            <tr>
+              <th className="guildList_names">Kilta</th>
+              <th>Pisteet</th>
+              <th>Positiiviset</th>
+              <th>Negatiiviset</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.renderGuildsList()}
+          </tbody>
+        </table>
+        <VaadinSponsor/>
       </div>
     )
   }

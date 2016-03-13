@@ -7,13 +7,19 @@ TiteeniClicker.Components.LandingComponent = React.createClass({
   },
   renderGuildsList(){
     return this.data.guilds.map((guild, i) => {
-      return <TiteeniClicker.Components.GuildListView key={guild._id} guild={guild} link={false}/>
+      return <tr key={guild._id}><td className="guildList_names">{guild.guild}:</td><td className="guildList_points">{guild.points}</td></tr>
     });
   },
   render(){
     return(
       <div className="overView">
-        {this.renderGuildsList()}
+        <h2 className="pointsTitle">Pisteet:</h2>
+        <table className="currentScore">
+          <tbody>
+            {this.renderGuildsList()}
+          </tbody>
+        </table>
+        <VaadinSponsor/>
       </div>
     )
   }
