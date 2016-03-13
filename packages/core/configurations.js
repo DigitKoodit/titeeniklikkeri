@@ -1,0 +1,2 @@
+TiteeniClicker = {};
+TiteeniClicker.guilds = {};

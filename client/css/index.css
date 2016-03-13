@@ -1,0 +1,109 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: #01B4F0;
+  background-color: #212121;
+  font-family: 'Monda', sans-serif;
+}
+h1{
+  font-size: 4em;
+}
+
+.guildScore{
+  font-size: 7em;
+}
+
+button{
+  font-weight: bold;
+  width:3em;
+  height:3em;
+  font-size: 4em;
+  border:none;
+  margin: 1em;
+  margin-top: 0em;
+  border-radius: 50%;
+  background-color: white;
+  color: #01B4F0;
+}
+
+.addScore:hover{
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: #01B4F0;
+  color:white;
+  -webkit-transition-property: #01B4F0;
+  transition-property: #01B4F0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.decScore:hover{
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: #e74c3c;
+  color:white;
+  -webkit-transition-property: #01B4F0;
+  transition-property: #01B4F0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+}
+
+.guildView{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guildInfo{
+  text-align: center;
+}
+
+.pageFooter{
+  -webkit-box-shadow: 1px -7px 63px 48px rgba(1,180,240,1);
+-moz-box-shadow: 1px -7px 63px 48px rgba(1,180,240,1);
+box-shadow: 1px -7px 63px 48px rgba(1,180,240,1);
+  display: inline-block;
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  height: 3em;
+  background-color: #01B4F0;
+  color: #212121;
+  left:0px;
+}
+.pageFooter p{
+  padding: 0px;
+}
+.navi{
+  padding: 0px;
+  margin: 0px;
+  margin-left: 2em;
+  display: inline-block;
+}
+
+.copyright{
+  margin: 1em;
+  float: right;
+  display: inline-block;
+  right: 0px;
+}
+
+.pageFooter a{
+  text-decoration: none;
+  color: #212121;
+}
+
+.pageFooter a:hover{
+  color: white;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
