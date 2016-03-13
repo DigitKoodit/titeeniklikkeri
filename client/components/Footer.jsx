@@ -1,4 +1,4 @@
-Footer = React.createClass({
+TiteeniClicker.Components.Footer = React.createClass({
   render(){
     return(
       <div className="pageFooter">

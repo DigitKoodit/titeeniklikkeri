@@ -1,4 +1,4 @@
-AppRoot = React.createClass({
+TiteeniClicker.Components.AppRoot = React.createClass({
   componentWillMount(){
     console.log("Approot will mount");
   },
@@ -6,7 +6,7 @@ AppRoot = React.createClass({
     return(
       <div>
         {this.props.yield}
-        <Footer />
+        <TiteeniClicker.Components.Footer />
       </div>
     );
   }

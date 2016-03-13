@@ -1,4 +1,4 @@
-GuildView = React.createClass({
+TiteeniClicker.Components.GuildView = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData(){
     return{

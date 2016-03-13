@@ -1,4 +1,4 @@
-LandingComponent = React.createClass({
+TiteeniClicker.Components.LandingComponent = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData(){
     return{
@@ -7,7 +7,7 @@ LandingComponent = React.createClass({
   },
   renderGuildsList(){
     return this.data.guilds.map((guild, i) => {
-      return <GuildListView key={guild._id} guild={guild} link={false}/>
+      return <TiteeniClicker.Components.GuildListView key={guild._id} guild={guild} link={false}/>
     });
   },
   render(){

@@ -1,4 +1,4 @@
-AdminView = React.createClass({
+TiteeniClicker.Components.AdminView = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData(){
     return{
@@ -7,7 +7,7 @@ AdminView = React.createClass({
   },
   renderGuildsList(){
     return this.data.guilds.map((guild, i) => {
-      return <GuildListView key={guild._id} guild={guild} link={true} />
+      return <TiteeniClicker.Components.GuildListView key={guild._id} guild={guild} link={true} />
     });
   },
   render(){

@@ -1,4 +1,4 @@
-GuildListView = React.createClass({
+TiteeniClicker.Components.GuildListView = React.createClass({
   render(){
     if(this.props.link){
       return(
