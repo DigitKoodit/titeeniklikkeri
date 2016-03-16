@@ -3,11 +3,9 @@ VaadinSponsor = React.createClass({
     return (
       <div className="vaadinSponsor">
         <h3>
-          Sponsored by:
+          Game sponsored by:
         </h3>
-        <h1>
-          <span id="vaadinName">vaadin</span> }>
-        </h1>
+          <img src="/vaadin.svg" className="vaadinLogo"/>
       </div>
     );
   }

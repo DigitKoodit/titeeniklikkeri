@@ -65,6 +65,8 @@ button{
 
 .guildInfo{
   text-align: center;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
 }
 
 .pageFooter{
@@ -119,8 +121,18 @@ button{
 
 .vaadinSponsor{
   position: fixed;
+  width: 40%;
   top: 40%;
-  left: 40%;
+  left: 30%;
+  right: 30%;
+}
+.vaadinLogo{
+  width: 100%;
+}
+
+.vaadinGame{
+  width: 30%;
+  margin-bottom: 2em;
 }
 
 .currentScore{

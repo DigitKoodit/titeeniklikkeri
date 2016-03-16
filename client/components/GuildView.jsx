@@ -2,20 +2,14 @@ TiteeniClicker.Components.GuildView = React.createClass({
   mixins: [ReactMeteorData],
   getMeteorData(){
     return{
-      guildData: TiteeniClicker.guilds.findOne({_id: this.props.id.guildId})
+      guildData: TiteeniClicker.guilds.findOne({_id: this.props.id.guildId}),
+      sponsor: "/Vaadin.png"
     }
   },
   decrementScore(e){
     Meteor.call('decrementScore', this.data.guildData._id);
-    // if(e.keyCode === undefined){
-    // }else if(e.keyCode === 13){
-    //   alert("Älä nyt paina sitä Enteriä.");
-    //   return;
-    // }
-
   },
   incrementScore(e){
-
     Meteor.call('incrementScore', this.data.guildData._id);
   },
   testForCheating(e){
@@ -26,6 +20,8 @@ TiteeniClicker.Components.GuildView = React.createClass({
     if(this.data.guildData !== undefined){
       return(
         <div className="guildView">
+          <h3>Game sponsored by:</h3>
+          <img className="vaadinGame" src={this.data.sponsor}/>
           <div className="guildInfo">
             <h1>{this.data.guildData.guild}</h1>
             <h2 className="guildScore">{this.data.guildData.points}</h2>

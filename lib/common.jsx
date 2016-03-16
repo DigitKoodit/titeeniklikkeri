@@ -1,3 +1,5 @@
+const deadline = new Date(2016, 3, 19, 21, 0, 0).getTime();
+
 if(Meteor.isClient){
   Meteor.subscribe("guilds");
 }
