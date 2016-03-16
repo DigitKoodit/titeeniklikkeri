@@ -3,7 +3,7 @@ TiteeniClicker.Components.GuildView = React.createClass({
   getMeteorData(){
     return{
       guildData: TiteeniClicker.guilds.findOne({_id: this.props.id.guildId}),
-      sponsor: "/Vaadin.png"
+      sponsors: ["/Vaadin.png", "/Nortal.png", "/Sofokus.png"]
     }
   },
   decrementScore(e){
@@ -16,12 +16,19 @@ TiteeniClicker.Components.GuildView = React.createClass({
     e.preventDefault();
     alert("Tämä on klikkeri. Älä paina enteriä senkin kieroilija.")
   },
+  renderImages(){
+    return this.data.sponsors.map((sponsor) =>{
+      return <img className="vaadinGame" src={sponsor}/>
+    })
+  },
   render(){
     if(this.data.guildData !== undefined){
       return(
         <div className="guildView">
           <h3>Game sponsored by:</h3>
-          <img className="vaadinGame" src={this.data.sponsor}/>
+          <div className="sponsorContainer">
+            {this.renderImages()}
+          </div>
           <div className="guildInfo">
             <h1>{this.data.guildData.guild}</h1>
             <h2 className="guildScore">{this.data.guildData.points}</h2>
