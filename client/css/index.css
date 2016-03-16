@@ -16,6 +16,8 @@ h1{
   font-size: 7em;
 }
 
+
+
 button{
   font-weight: bold;
   width:3em;
@@ -102,6 +104,13 @@ button{
   color: #212121;
 }
 
+.situationView{
+  width: 40%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pageFooter a:hover{
   color: #ecf0f1;
   -webkit-transition-duration: 0.3s;
@@ -113,16 +122,14 @@ button{
   margin-left: 5em;
 }
 
-.pointsTitle{
-  margin-left: 2em;
-}
 
 .vaadinSponsor{
-  position: fixed;
+  margin-top: 2em;
+  border-top: #ecf0f1 1px solid;
   width: 40%;
-  top: 40%;
-  left: 30%;
-  right: 30%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .vaadinLogo{
   width: 100%;
@@ -136,16 +143,16 @@ button{
 }
 
 .vaadinGame{
-  margin-left: 3%;
-  margin-right: 3%;
-  width: 27%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 20%;
   margin-bottom: 2em;
   display: inline-block;
   vertical-align: middle;
 }
 
 .currentScore{
-  margin-left: 5em;
+  /*margin-left: 5em;*/
   text-align: center;
 }
 

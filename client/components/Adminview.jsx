@@ -21,20 +21,22 @@ TiteeniClicker.Components.AdminView = React.createClass({
   render(){
     return(
       <div className="overView">
-        <h2 className="pointsTitle">Pistetilanne - Tuomaristonäkymä</h2>
-        <table className="currentScore">
-          <thead>
-            <tr>
-              <th className="guildList_names">Kilta</th>
-              <th>Pisteet</th>
-              <th>Positiiviset</th>
-              <th>Negatiiviset</th>
-            </tr>
-          </thead>
-          <tbody>
-            {this.renderGuildsList()}
-          </tbody>
-        </table>
+        <div className="situationView">
+          <h2 className="pointsTitle">Pistetilanne - Tuomaristonäkymä</h2>
+          <table className="currentScore">
+            <thead>
+              <tr>
+                <th className="guildList_names">Kilta</th>
+                <th>Pisteet</th>
+                <th>Positiiviset</th>
+                <th>Negatiiviset</th>
+              </tr>
+            </thead>
+            <tbody>
+              {this.renderGuildsList()}
+            </tbody>
+          </table>
+        </div>
         <VaadinSponsor/>
       </div>
     )

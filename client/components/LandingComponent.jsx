@@ -13,12 +13,14 @@ TiteeniClicker.Components.LandingComponent = React.createClass({
   render(){
     return(
       <div className="overView">
-        <h2 className="pointsTitle">Pisteet:</h2>
-        <table className="currentScore">
-          <tbody>
-            {this.renderGuildsList()}
-          </tbody>
-        </table>
+        <div className="situationView">
+          <h2 className="pointsTitle">Pisteet:</h2>
+          <table className="currentScore">
+            <tbody>
+              {this.renderGuildsList()}
+            </tbody>
+          </table>
+        </div>
         <VaadinSponsor/>
       </div>
     )

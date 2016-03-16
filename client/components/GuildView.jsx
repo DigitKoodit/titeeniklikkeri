@@ -3,7 +3,7 @@ TiteeniClicker.Components.GuildView = React.createClass({
   getMeteorData(){
     return{
       guildData: TiteeniClicker.guilds.findOne({_id: this.props.id.guildId}),
-      sponsors: ["/Vaadin.png", "/Nortal.png", "/Sofokus.png"]
+      sponsors: ["/Vaadin.png", "/Nortal.png", "/Sofokus.png", "/Acc.png"]
     }
   },
   decrementScore(e){
